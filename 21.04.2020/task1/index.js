@@ -1,4 +1,4 @@
-function squareArr(arr) {
+function squareArray(arr) {
     const result = [];
     for(let i = 0; i < arr.length; i++){
          const square =  arr[i] *  arr[i];
@@ -7,8 +7,7 @@ function squareArr(arr) {
     return result;
 }
     const numbers = [1, 2, 3, 4, 5,];
-    const result = squareArr(numbers);
+    const result = squareArray(numbers);
 
-    console.log(result)
-    console.log(numbers)
+    
 
