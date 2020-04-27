@@ -24,7 +24,7 @@ console.log(numbersList)
 // выведите numbersList в консоль
 
 // ... code here
-const result = numbersList.push(6, 8)
+const result = numbersList.push(6)
 console.log(result)
 console.log(numbersList)
 
@@ -44,10 +44,10 @@ console.log(firstNumber)
 // выведите numbersList в консоль
 
 // ... code here
-numbersList.unshift()
+numbersList.unshift(0)
 console.log(numbersList)
-const secondNumber = numbersList.unshift(7)
-console.log(secondNumber)
+// const secondNumber = numbersList.unshift(7)
+// console.log(secondNumber)
 
 
 /* ======================================= */
@@ -72,8 +72,8 @@ numbersList.forEach(func);
 function square(num){
     return num * num
    }
-   const squareNumbers = numbersList.map(square)
-   console.log(squareNumbers)
+   const squaredNumbers = numbersList.map(square)
+   console.log(squaredNumbers)
 
 
 
@@ -90,8 +90,8 @@ function square(num){
 function callback(num){
     return num % 2 ===0
   }
-  const evenNumbers  = numbersList.filter(callback);
-  console.log(evenNumbers)
+  const newArr  = numbersList.filter(callback);
+  console.log(newArr)
 
 /* метод find */
 /* const arrElement = arr.filter(callback) - вернет первый элемент массива arr, который удовлетворяет условию в callback. */
