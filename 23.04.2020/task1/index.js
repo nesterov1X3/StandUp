@@ -14,9 +14,9 @@ const numbersList = [1, 2, 3, 4, 5];
 
 // ... code here
 const a = numbersList.pop()
-// console.log(a)
+console.log(a)
 
-// console.log(numbersList)
+console.log(numbersList)
 
 /* push - добавит элемент в конец массива */
 
@@ -25,8 +25,8 @@ const a = numbersList.pop()
 
 // ... code here
 const result = numbersList.push(6, 8)
-// console.log(result)
-// console.log(numbersList)
+console.log(result)
+console.log(numbersList)
 
 /* shift - удалит из массива первый элемент и вернет его */
 
@@ -35,7 +35,7 @@ const result = numbersList.push(6, 8)
 
 // ... code here
 const firstNumber = numbersList.shift()
-// console.log(firstNumber)
+console.log(firstNumber)
 
 
 /* unshift - добавит элемент в начало массива */
@@ -45,9 +45,9 @@ const firstNumber = numbersList.shift()
 
 // ... code here
 numbersList.unshift()
-// console.log(numbersList)
+console.log(numbersList)
 const secondNumber = numbersList.unshift(7)
-// console.log(secondNumber)
+console.log(secondNumber)
 
 
 /* ======================================= */
@@ -56,7 +56,7 @@ const secondNumber = numbersList.unshift(7)
 /* ======================================= */
 
 function func(item){
-    // console.log(item)
+    console.log(item)
 }
 numbersList.forEach(func);
 
@@ -69,7 +69,11 @@ numbersList.forEach(func);
 // c помощью метода map создайте новый массив squaredNumbers, в котором будут квадраты чисел из numbersList
 // выведите squaredNumbers в консоль
 
-// ... code here
+function square(num){
+    return num * num
+   }
+   const squareNumbers = numbersList.map(square)
+   console.log(squareNumbers)
 
 
 
@@ -83,8 +87,11 @@ numbersList.forEach(func);
 // c помощью метода filter создайте новый массив evenNumbers, в котором только четные числа из numbersList
 // выведите evenNumbers в консоль
 
-// ... code here
-
+function callback(num){
+    return num % 2 ===0
+  }
+  const evenNumbers  = numbersList.filter(callback);
+  console.log(evenNumbers)
 
 /* метод find */
 /* const arrElement = arr.filter(callback) - вернет первый элемент массива arr, который удовлетворяет условию в callback. */
@@ -95,18 +102,8 @@ numbersList.forEach(func);
 
 // ... code here
 
-function square(num){
-    num * num
-   }
-   const squareNumbers = numbersList.map(square)
-   // console.log(squareNumbers)
-   
 
-   function callback(num){
-     return num % 2 ===0
-   }
-   const evenNumbers  = numbersList.filter(callback);
-//    console.log(evenNumbers)
+   
 
 function oddNumber(num){
     return num % 2 ===1;
