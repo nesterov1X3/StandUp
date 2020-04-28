@@ -1,17 +1,11 @@
-const numbersList = [1, 2, 3, 4, 5];
+const numbersList = [4, 6, 7, 3]
 
-function square(num){
- num * num
+
+
+const getTotalPrice  = (arr) => {
+  const sum = arr .reduce(function callback(acc, num){
+    return acc + num
+  }, 0);
+  return '$' + Math.floor(sum * 100) / 100;
 }
-const squareNumbers = numbersList.map(square)
-// console.log(squareNumbers)
-
-function callback(num){
-  return num % 2 ===0
-}
-const evenNumbers  = numbersList.filter(callback);
-console.log(evenNumbers)
-
-
-
-
+const result = getTotalPrice(numbersList)
