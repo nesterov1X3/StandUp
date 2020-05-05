@@ -13,7 +13,7 @@ const customers = {
     },
 }
 
-function getCustomerList(obj){
+function getCustomersList(obj){
    return Object.entries(obj).map(
        (arr) =>  Object.assign(arr[1], {id : arr[0] })
   ).sort((a, b) => { a.age - b.age });
