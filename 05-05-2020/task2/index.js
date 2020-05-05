@@ -16,6 +16,8 @@ const customers = {
 function getCustomersList(obj){
    return Object.entries(obj).map(
        (arr) =>  Object.assign(arr[1], {id : arr[0] })
-  ).sort((a, b) => { a.age - b.age });
+  ).sort((a, b) =>  a.age - b.age );
 }
 
+const result = getCustomersList(customers);
+console.log(result)
