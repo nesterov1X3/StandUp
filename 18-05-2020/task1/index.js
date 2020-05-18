@@ -1,7 +1,7 @@
 // сылка на объект, владеющая вызовом функции
 
 
-const timer = {
+export const timer = {
     secondsPassed: 0,
     minsPassed: 0,
     timerId: null,
