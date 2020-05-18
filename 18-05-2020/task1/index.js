@@ -1,7 +1,5 @@
 // сылка на объект, владеющая вызовом функции
-
-
-export const timer = {
+ const timer = {
     secondsPassed: 0,
     minsPassed: 0,
     timerId: null,
@@ -17,8 +15,8 @@ export const timer = {
     //  this.timerId = timerId;
     },
     getTimer() {
-      let secs  = this.secondsPassed < 10 ? `0${this.secondsPassed}` : this.secondsPassed;
-      return `${this.minsPassed}: ${secs}`
+      let secs  = this.secondsPassed < 10 ? `0${this.secondsPassed}`:this.secondsPassed;
+      return `${this.minsPassed}:${secs}`
     },
     stopTimer() {
       clearInterval(this.timerId);
