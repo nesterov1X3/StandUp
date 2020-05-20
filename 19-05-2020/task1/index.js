@@ -35,7 +35,7 @@ let user = {
 //  bind(printMessege, user)(30)
 //   bind(printMessege, user, 30)()
 
-  function bind(func, context, ...args){
+  export function bind(func, context, ...args){
     return function(...args1){
       // console.log(...args1);
       
