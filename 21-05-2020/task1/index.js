@@ -1,4 +1,4 @@
-export const user = {
+ const user = {
   _firstName: 'John',
   lastName: 'Doe',
   getfullName() {
@@ -27,6 +27,7 @@ export const user = {
     return this._firstName
   }
 }
+export default user
 // user.firstName = 1;
 // console.log(user._firstName);
 
