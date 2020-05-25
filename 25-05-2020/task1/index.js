@@ -12,7 +12,7 @@ export class Sportsman {
 }
 
 const user1 = new Sportsman('John')
-// user1.run()
+user1.run()
 
 export class Swimmer extends Sportsman {
    constructor(name, style){
@@ -27,4 +27,4 @@ export class Swimmer extends Sportsman {
 
 const sw1 = new Swimmer('John',  'breaststroke')
 // console.log(sw1);
-// sw1.swim()
+sw1.swim()
