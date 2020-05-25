@@ -1,20 +1,20 @@
-class Sportsman {
-  constructor(name, age){
+export class Sportsman {
+  constructor(name){
     this.name = name;
     }
     run = function(){
       console.log(`${this.name} is running`);
   }
-  toString(){
-    console.log('pa-bam');
+  // toString(){
+  //   console.log('pa-bam');
     
-  }
+  // }
 }
 
-const user1 = new Sportsman('Bob', 33)
+const user1 = new Sportsman('John')
 
 
-class Swimer extends Sportsman {
+export class Swimer extends Sportsman {
    constructor(name, style){
      super(name)
       this.style = style
@@ -25,6 +25,6 @@ class Swimer extends Sportsman {
    }
 }
 
-const sw1 = new Swimer('John',  'style1')
-console.log(sw1);
-sw1.swim()
+const sw1 = new Swimer('John',  'breaststroke')
+// console.log(sw1);
+// sw1.swim()
