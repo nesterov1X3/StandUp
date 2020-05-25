@@ -14,7 +14,7 @@ export class Sportsman {
 const user1 = new Sportsman('John')
 
 
-export class Swimer extends Sportsman {
+export class Swimmer extends Sportsman {
    constructor(name, style){
      super(name)
       this.style = style
