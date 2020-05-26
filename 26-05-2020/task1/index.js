@@ -6,6 +6,7 @@
 // const elements = Array.from(el2).map(el =>el.textContent)
 // console.log(elements);
 // console.log(elOne);
+function finishList(){
 const elOne = document.createElement('li')
 const listEl = document.querySelector('.list')
 elOne.textContent = 1;
@@ -29,3 +30,4 @@ const elFourh = document.createElement('li')
 // const listEl1 = document.querySelector('.special')
 elFourh.textContent = 6;
 listEl1.after(elFourh)
+}
