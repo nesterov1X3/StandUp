@@ -1,9 +1,9 @@
-const el1 = document.querySelector('li')
-const el2 = document.querySelectorAll('li')
+// const el1 = document.querySelector('li')
+// const el2 = document.querySelectorAll('li')
 // console.log(el1);
 // console.log(el2);
 
-const elements = Array.from(el2).map(el =>el.textContent)
+// const elements = Array.from(el2).map(el =>el.textContent)
 // console.log(elements);
 // console.log(elOne);
 const elOne = document.createElement('li')
