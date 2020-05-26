@@ -6,7 +6,7 @@
 // const elements = Array.from(el2).map(el =>el.textContent)
 // console.log(elements);
 // console.log(elOne);
-function finishList(){
+export function finishList(){
 const elOne = document.createElement('li')
 const listEl = document.querySelector('.list')
 elOne.textContent = 1;
