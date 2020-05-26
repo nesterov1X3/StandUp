@@ -15,7 +15,7 @@ listEl.prepend(elOne)
 
 const elTwo = document.createElement('li')
 elTwo.textContent = 8;
-elTwo.setAttribute('data-number', 9)
+// elTwo.setAttribute('data-number', 9)
 listEl.append(elTwo)
 
 
