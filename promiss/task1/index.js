@@ -14,11 +14,11 @@ export const getUsersList = () => {
 
 
 /* getUserById code here */
-const getUserById = (userId) => {
+export const getUserById = (userId) => {
   return fetch(`${baseUrl}/${userId}`)
-    .then((response) => {
-      return response.json()
-    })
+    .then(response => 
+       response.json()
+    )
 }
 // getUserById(43)
 //   .then(data => console.log(data));
