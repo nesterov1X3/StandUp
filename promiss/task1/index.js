@@ -24,10 +24,10 @@ const getUserById = (userId) => {
 //   .then(data => console.log(data));
 
 /* createUser code here */
-const user = {
-  firstName: 'Bob',
-  lastName: 'Job'
-}
+// const user = {
+//   firstName: 'Bob',
+//   lastName: 'Job'
+// }
 export const createUser = (user) => {
   return fetch(baseUrl, {
     method: "POST",
