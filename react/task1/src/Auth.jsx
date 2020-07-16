@@ -13,7 +13,7 @@ class Auth extends React.Component {
 
         }
     }
-    login =() => {
+    login = () => {
         this.setState({
             isProcessing: true
         })
