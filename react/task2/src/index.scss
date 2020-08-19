@@ -6,46 +6,54 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#root {
+.page {
+    width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        margin: 8px;
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     align-items: center;
-}
 
-.login {
-    background-color: green;
-}
-
-.logout {
-    background-color: cornflowerblue;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg); 
+    &__avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
     }
-    to {
-        transform: rotate(360deg); 
+
+    &__info {
+        text-align: center;
+        font-size: 24px;
+        margin: 32px;
     }
-}
 
-.spinner {
-    display: inline-block;
-    border: 3px solid #ccc;
-    border-left-color: transparent;
-    animation: spin .5s infinite linear;
-    border-radius: 50%;
-}
+    &__name {
+        font-weight: 700;
+    }
 
-.btn {
-    height: 48px;
-    color: #fff;
-    border-radius: 8px;
-    width: 120px;
-    outline: none;
-    border: none;
-    text-transform: uppercase;
-    padding: 8px;
-    cursor: pointer;
+    &__location {
+        opacity: 0.5;
+        margin-left: 16px;
+    }
 }
